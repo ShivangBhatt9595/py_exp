@@ -1,0 +1,137 @@
+print("24 Shivang Bhatt")
+
+
+    # str1 = 'ICT Department'
+    # print (str1)
+
+    # str2 = "ICT Department"
+    # print (str2)
+
+    # str3 = '''ICT Department'''
+    # print (str3)
+
+    # str = ("ICT Department")
+    # print (str[4])
+    # print (str[-5])
+
+    # str = ("ICT Department")
+    # print(str[0 : 6])
+
+    # print(str[2 :])
+    # print(str[: 7])
+
+    # message = 'ICT Department'
+    # message[0] = 'H'
+
+    # print(message)
+
+    # m = 'ICT'
+    # m = 'ICT Department'
+    # print(m)
+
+    # M = """
+    #     ICT 
+    #     Department
+    #     3EK3
+    # """
+
+    # print(M)    
+
+    # str1 = 'ICT'
+    # str2 = 'Department'
+    # str3 = 'EK3'
+
+    # print(str1 == str2)
+    # print(str1 == str3)
+
+    # Dep = 'ICT'
+    # Course = "B.Tech"
+
+    # print(Course + "\t" + Dep)
+
+    # str = 'ICT Department'
+    # print(len(str))
+
+    # str = 'ICT Department'
+    # print(str.upper())
+
+    # str = 'ICT Department'
+    # print(str.lower())
+
+    # str1 = 'CE Department'
+    # print(str1)
+    # str2 = str1.replace('CE','ICT')
+    # print(str2)
+
+    # str = "ICT Department"
+    # print(str.find("ICT"))
+
+    # str = "Welcome to Python  "
+    # print(str.rstrip())
+
+    # str = "Welcome to Python "
+    # print(str.split())
+
+    # str = "Welcome to Python "
+    # print(str.startswith('Python'))
+
+    # str = "123456"
+    # print(str.isnumeric())
+        
+    # str = "Welcome to Python "
+    # print(str.index('Python'))
+
+    # name = 'Shivang'
+    # country = 'India'
+    # print(f'{name} is from {country}')
+
+    # str = "This is a \n normal string example" 
+    # print(str) 
+    # raw_str = r"This is a \n raw string example" 
+    # print(raw_str)
+
+
+#-------------------------------------------------------------POST-LAB-------------------------------------------------------------
+
+#1. Reverse string
+
+# str = "EK3 ICT Department"
+# print(str[::-1])
+
+#2. If Is Pallindrome
+ 
+# str = input("Enter Your String: ")
+
+# if str == str[::-1]: 
+#     print("It is Pallindrome")
+# else: print("Not Pallindrome")
+
+#3. If Only Numbers
+
+# str1 = input("Enter Your String: ") 
+
+# if str1.isdigit(): 
+#     print("Has Only Digits")
+# else: print("Not Only Digits")
+
+#4 Check Longest Word in Sentence
+
+# str = input("Enter Your String: ")
+# w = str.split()
+
+# l = ""
+# for w in w:
+#     if len(w) > len(l):
+#         l = w
+
+# print("Longest word is: ", l)
+
+#5 Length of the Last Word
+
+# str = input("Enter Your String: ")
+# w = str.split()
+# l_w = w[-1]
+# print("Last word is:", l_w)
+# print("Length is:", len(l_w))
+
+ 
