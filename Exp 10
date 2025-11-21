@@ -1,0 +1,111 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+# x = [3,1,3]
+# y = [3,2,1]
+
+# mt.plot(x,y)
+# mt.title("Line Chart")
+
+# mt.legend(["Line"])
+# mt.show()
+
+# x = np.linspace(0.1,2 * np.pi,41)
+# y = np.exp(np.sin(x))
+# mt.stem(x,y, use_line_collection = True)
+# mt.show()
+
+# x = [3,1,3,12,2,4,4]
+# y = [3,2,1,4,5,6,7]
+
+# mt.bar(x,y)
+# mt.title("Bar Chart")
+# mt.legend(["bar"])
+# mt.show()
+
+# x = [1,2,3,4,5,6,7,4]
+
+# mt.hist(x, bins = [1,2,3,4,5,6,7])
+# mt.title("Histogram")
+# mt.legend(["bar"])
+# mt.show()
+
+# x = [3,1,3,12,2,4,4]
+# y = [3,2,1,4,5,6,7]
+
+# mt.scatter(x,y)
+# mt.legend("A")
+# mt.title("Scatter Plot")
+# mt.show()
+
+# np.random.seed(10)
+# data = np.random.normal(100,20,200)
+# fig = mt.figure(figsize =(10,7))
+# mt.boxplot(data)
+# mt.title("Box Plot")
+# mt.show()
+
+# x = [1,2,3,4]
+# e = (0.1,0,0,0)
+# mt.pie(x ,explode = e)
+# mt.title("Pie Chart")
+# mt.show()
+
+# x = [1,2,3,4,5,6,7]
+# y = [1,2,1,2,1,2,1]
+
+# y_e = 0.2
+
+# mt.plot(x,y)
+# mt.errorbar(x,y, yerr = y_e, fmt = 'o')
+
+# mt.title("Error Chart")
+# mt.show()
+
+# x = [1,2,3,4,5]
+# y = [1,4,9,16,25]   
+# z = [1,8,27,64,125]
+
+# fig = mt.figure()
+
+# ax = mt.axes(projection = '3d')
+# ax.plot3D(z,y,x)
+
+# mt.show()
+
+
+
+#---------------------------------------------------POST-LAB---------------------------------------------------
+
+#1
+# x = [1, 2, 3, 4, 5]
+# y = [2, 4, 3, 6, 5]
+
+# plt.plot(x, y)
+# plt.xlabel("X Axis")
+# plt.ylabel("Y Axis")
+# plt.title("Simple Line Plot")
+# plt.show()
+
+#2
+# x = [1, 2, 3, 4, 5]
+# y1 = [2, 4, 6, 8, 10]
+# y2 = [1, 3, 5, 7, 9]
+# plt.plot(x, y1)
+# plt.plot(x, y2)
+# plt.xlabel("X Axis")
+# plt.ylabel("Y Axis")
+# plt.title("Multiple Line Plot")
+# plt.legend(["Line 1", "Line 2"])
+# plt.show()
+
+
+#3
+# languages = ["Java", "Python", "PHP", "JavaScript", "C#", "C++"]
+# popularity = [22.2, 17.6, 8.8, 8, 7.7, 6.7]
+# plt.bar(languages, popularity)
+# plt.xlabel("Programming Languages")
+# plt.ylabel("Popularity (%)")
+# plt.title("Popularity of Programming Languages")
+# plt.show()
