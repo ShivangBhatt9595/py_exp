@@ -1,0 +1,138 @@
+print("24 Shivang Bhatt")
+
+#Example 1 (Arithematic Operations)
+
+'''a = int(input("Enter the First Value: "))
+b = int(input("Enter the Second Value: "))
+
+print("Addition: ", a + b)
+print("Subtraction: ", a - b)
+print("Multiplication: ", a * b)
+print("Division: ", a / b)'''
+
+#Example 2 (Comparing Values)
+
+'''a = int(input("Enter the First Value: "))
+b = int(input("Enter the Second Value: "))
+
+print("Greater Value: ", a > b)
+print("Less than or Equal: ", a <= b)
+print("Equal to: ", a == b)
+print("Not Equal to: ", a != b)'''
+
+#Example 3 (Arithematic Operations of Decimal)
+
+'''a = float(input("Enter the First Value: "))
+b = float(input("Enter the Second Value: "))
+
+print("Addition: ", a + b)
+print("Subtraction: ", a - b)
+print("Multiplication: ", a * b)
+print("Division: ", a / b)'''
+
+#Example 4 (Comparing Values of Decimal)
+
+'''a = float(input("Enter the First Value: "))
+b = float(input("Enter the Second Value: "))
+
+print("Greater Value: ", a > b)
+print("Less than or Equal: ", a <= b)
+print("Equal to: ", a == b)
+print("Not Equal to: ", a != b)'''
+
+#Example 5 (Arithmetic of Complex)
+
+'''a = complex(input("Enter the First Value: "))
+b = complex(input("Enter the Second Value: "))
+
+print("Addition: ", a + b)
+print("Subtraction: ", a - b)
+print("Multiplication: ", a * b)
+print("Division: ", a / b)'''
+
+#Example 6 (Comparision of Complex)
+
+'''a = complex(input("Enter the First Value: "))
+b = complex(input("Enter the Second Value: "))
+
+print("Equal to: ", a == b)
+print("Not Equal to: ", a != b)'''
+
+#Example 7 (String Values)
+
+'''a = input("Enter your String: ")
+
+print(a)
+print(a[0])
+print(a[0:4])'''
+
+#Example 8 (String Addition)
+
+'''a = input("Enter first String: ")
+b = input("Enter second String: ")
+c = input("Enter third String: ")
+
+print(a + "\t" + b + "\t" + c)'''
+
+#Repitions
+
+'''a = input("Enter Your String: ")
+print(4 * a)'''
+
+#Memberships
+
+'''a = input("Enter your String: ")
+print("p" in a)
+
+print("f" not in a)'''
+
+#Collection Data Types
+
+'''a = [int(x) for x in input("Enter Numbers: ").split()]
+
+b = input("Enter your sentences: ").split()
+
+c = [int(x) if x.isdigit() else x for x in input("Enter Mixed String: ").split()]
+
+print (a)
+print (b)
+print (c)'''
+
+'''dict1 = {"comp": "computer" , "sci" : "science"}
+print(dict1["comp"])
+dict2={"123":"computer",456 : "maths"}
+print(dict2["123"])
+print(dict1["comp"] + dict2["123"])
+
+print({**dict1, **dict2})'''
+
+#SETs
+
+'''a = set(map(int, input("Enter your Numbers: ").split()))
+print (a)
+b = set(map(int, input("Enter your Numbers: ").split()))
+print (b)
+
+print (a + b)'''
+
+#-----------------------------------------POST-LAB-----------------------------------------
+
+#1
+'''for i in range (5):
+    print("Welcome TO Python")'''
+    
+#2
+'''print("a\t a^2\t a^3")
+for a in range(1, 5):
+    print(f"{a}\t {a**2}\t {a**3}")'''
+
+#3
+'''n = 9.5 * 4.5 - 2.5 * 3
+d = 45.5 - 3.5
+
+result = n / d
+
+print("Result:", result)'''
+
+
+
