@@ -1,0 +1,95 @@
+# import numpy as np
+
+# t1 = (1, 2, 3)
+# print (t1)
+
+# t1 = (0, [1,2,3],(4,5,6),7,0)
+# print(t1)
+
+# t1 = ('Python','Swift','C++')
+# print(t1[0])
+
+# cars = ('BMW', 'Tesla', 'Toyota', 'Ford')
+# print("Total Items: ", len(cars))
+
+# a = tuple(range(5))
+# print(a)
+
+# b = tuple(range(5,2))
+# print(b)
+
+# c = tuple(range(1,10,2))
+# print(c)
+
+# d = tuple(range(10,0,-2))
+# print(d)
+
+# d = (3,[5,6,7],(4,5,6,),[5,6,7,(6,7,8)]9,10)
+# print(d)
+
+# t1 = (2,3,4,5)
+# print(sum(t1))
+
+# t3 = (3,4,4,2,2,3,6,7,4,4)
+# print(t3.count(4))
+
+# t3 = (3,4,4,2,2,3,6,7,4,4)
+# print(t3.index(2))
+# print(t3.index(4,3,9))
+
+# t3 = (3,3,4,4,2,2,3,6,7,4,4)
+# print(min(t3))
+
+# t3 = (3,3,4,4,2,2,3,6,7,4,4)
+# print(max(t3))
+
+# t3 = (3,3,4,4,2,2,3,6,7,4,4)
+# print(max(t3))
+# a = tuple(dict.fromkeys(t3))
+# print(a)
+
+# first_names = ('Shivang', 'Prem', 'Krishraj', 'Jayveersinh')
+# last_names = ('Bhatt', 'Joshi', 'Rathod', 'Bhatti')
+# ages = (20, 17, 18, 20)
+# zipped = tuple(zip(first_names, last_names,ages))
+# print(zipped)
+
+# b = ((1,2),(3,4),(5,6))
+# my = tuple(item for l in b for item in l)
+# print(my)
+
+# t2 = (1,2,3)
+# t3 = (4,5,6)
+# print(tuple(np.array(t2) + np.array(t3)))
+
+#-----------------------------------------------------POST-LAB-----------------------------------------------------
+
+#1
+# t = (1, 2, 3, 2, 4, 2, 5)
+# print(t.count(2)) 
+
+#2
+# t = (1, 2, 3, 4, 5)
+# print(3 in t)
+
+#3
+# t = ('Python', 'is', 'fun')
+# print(' '.join(t))
+
+#4
+# t = (5, 3, 8, 2, 9)
+# print(max(t))
+# print(min(t))
+
+#5
+# t = ('Hello', 'World', 'Python')
+# print(' '.join(t))
+
+#6
+# t = (10,3,5,2,6,4,7,9,8,1,0)
+# print(tuple(sorted(t)))
+
+#7
+# t = (10,20,30,40,50,60,70)
+# print(t[0])
+# print(t[-1])
