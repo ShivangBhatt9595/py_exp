@@ -1,0 +1,109 @@
+import numpy as np
+print("24 Shivang Bhatt")
+
+
+# list = [1,2,3]
+# a = np.array(list)
+# print (a)
+
+# a = np.array([1,2,3,4,5])
+# print (a)
+
+# a = np.zeros(4)
+# print (a)
+
+#Array with values 0 to 4
+# a = np.arange(5)
+# print("Using np.Arange(5): ", a)
+# #Array with values 1 to 8 with a tep of 2
+# b = np.arange(1,9,2)
+# print("Using np.arange(1,9,2): ", b)
+
+#Array pf 5 random numbers
+# a = np.random.rand(5)
+# print(a)
+
+#Creation of 1D array
+# a = np.array([10,20,30])
+# print(a)
+
+#Creation of 2D Array
+# a = np.array([[10,20,30],[40,50,60]])
+# print(a)
+
+#From 0 to 20 with step of 3
+# a = np.arange(0,20,3)
+# print("A sequential array with step of 3: ", a)
+
+# a = np.linspace(0,3,5)
+# print(a)
+
+# a = np.ones((2,3))
+# print(a)
+# print("Type: ", a)
+
+#Create an array of integers
+# a = np.array([-3,-1,0,1])
+# print(a)
+#Array of Float 
+# b = np.array([0.1,0.2,0.3])
+# print(b)
+#Array of Complex Number
+# c = np.array([1 + 2j, 2 + 3j, 3 + 4j])
+# print(c)
+#Datatype of Integer
+# print("Data Type of a: ",a.dtype)
+#Datatype of Float
+# print("Data Type of b: ",b.dtype)
+#Dataype of Complex 
+# print("Data Type of c: ",c.dtype)
+
+#Array of 8 - bit Integers
+# a = np.array([1,3,7], dtype = 'int8') 
+#Array of Unsigned 16 - bit Integers
+# b = np.array([2,5,6], dtype = 'uint16')
+#Array of 32 - bit Float
+# c = np.array([1.2,2.3,3.4], dtype = 'float32')
+#Array of 64 - bit complex
+# d = np.array([1 + 2j, 2 + 3j, 3 + 4j], dtype = 'complex64')
+#Arrays and their datatype
+# print(a, a.dtype)
+# print(b, b.dtype)
+# print(c, c.dtype)
+# print(d, d.dtype)
+
+#Create array of Integers
+# a = np.array([1,3,5,7])
+#Convert Datatype of int to float
+# b = a.astype('float')
+#Print array and their datatype
+# print(a, a.dtype)
+# print(b, b.dtype)
+
+#Create 2D array
+# a = np.array([[2,4,6],[1,3,5]])
+#Check Dimension of a
+# print(a.ndim)
+
+#Create 2D array
+# a = np.array([[2,4,6],[1,3,5]])
+#Check Size of a
+# print(a.size)
+
+#Create 2D array
+# a = np.array([[2,4,6],[1,3,5]])
+#Check Shape of a
+# print(a.shape)
+
+#Create 2D array
+# a = np.array([[2,4,6],[1,3,5]])
+#Check Datatype of a
+# print(a.dtype)
+
+#Create a 1D array 
+# a = np.array([6,7,8,10,13])
+# #Create 1D array 32 - bit Integers
+# b = np.array([6,7,8,10,13], dtype = np.int32)
+
+
+
