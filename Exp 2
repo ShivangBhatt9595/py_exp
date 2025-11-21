@@ -1,0 +1,106 @@
+print("24 Shivang Bhatt")
+
+#Addition
+'''a = int(input("Enter A Value: "))
+b= int(input("Enter A Value: ")) 
+result =a + b 
+print("Result: ", result)'''
+
+#Subtraction
+'''num1 = int(input("Enter the Value: "))
+num2 = int(input("Enter the Value: "))
+sub = num1-num2
+print("Result: ", sub)'''
+
+#Multiplication
+'''num1 = int(input("Enter the Value: "))
+num2 = int(input("Enter the Value: "))
+mul = num1*num2
+print("Result: ", mul)'''
+
+#Division
+'''num1 = int(input("Enter the Value: "))
+num2 = int(input("Enter the Value: "))
+div = num1/num2
+print("Result: ", div)'''
+
+#Modulus
+'''num1 = int(input("Enter the Value: "))
+num2 = int(input("Enter the Value: "))
+mod = num1%num2
+print("Result: ", mod)'''
+
+#Exponent
+'''num1 = int(input("Enter the Value: "))
+num2 = int(input("Enter the Value: "))
+expo = num1**num2
+print("Result: ", expo)'''
+
+#Floor Division
+'''num1 = int(input("Enter the Value: "))
+num2 = int(input("Enter the Value: "))
+fdiv = num1//num2
+print("Result: ", fdiv)'''
+
+#print(((5 + 4 ) / 3) * 2)
+
+'''x = int(input("Enter the Value: "))
+y = int(input("Enter the Value: "))
+z = int(input("Enter the Value: "))
+print(x * y // z)
+print(x * (y // z))'''
+
+'''x = int(input("Enter the Value: "))
+y = int(input("Enter the Value: "))
+z = int(input("Enter the Value: "))
+
+print(x ** y ** z)
+print((x ** y) ** z)'''
+
+
+#---------------------------  POST LAB ---------------------------
+#Area and Perimeter of Rectangle
+
+'''l = int(input("Enter the Value of Length: "))
+b = int(input("Enter the Value of Breadth: "))
+
+print("Area: ", l * b)
+print("Perimeter: ", 2*l + 2*b)'''
+
+#Odd or Even
+
+'''x = int(input("Enter the number: "))
+
+if x % 2 == 0:
+    print("The Number is Even")
+else:
+    print("The Number is Odd")'''
+    
+'''#Area and Volume of Cube
+
+x = int(input("Enter the Length of Cube: "))
+
+print("The Area is: ", 6 * x**2)
+print("The Volume is: ", x ** 3)'''
+
+#Equation    
+
+'''x = int(input("Enter Value: "))
+y = int(input("Enter Value: "))
+z = (x+y)*(x-y)
+print("The Result is: ", z)'''
+
+
+#Equation    
+
+'''x = int(input("Enter Value: "))
+y = int(input("Enter Value: "))
+z = (x+y)*(x+y)-2*x*y
+print("The Result is: ", z)'''
+
+#C to F
+
+'''C = int(input("Enter The Value of Degree Celsius: "))
+
+print("Fahrenheit: ", (C * 9 / 5) + 32)'''
+
