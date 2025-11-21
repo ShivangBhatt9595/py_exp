@@ -1,0 +1,187 @@
+# import sqlite3
+
+# print("Post Lab of 24 Shivang Bhatt")
+
+# conn = sqlite3.connect('student_record.db')
+
+# cursor = conn.cursor()
+
+#cursor.execute('''CREATE TABLE IF NOT EXISTS student_record(
+
+# #         Enrollment INTEGER PRIMARY KEY,
+# #         Name TEXT NOT NULL,
+# #         Subject TEXT NOT NULL,
+# #         Mark INTEGER NOT NULL
+        
+# #         )''')
+
+# # #commit Changes
+
+# # conn.commit()
+
+# # student_record = [
+# #     (92510133024, 'Shivang Bhatt', 'PWP', 95),
+# #     (92510133023, 'Krishraj Rathod', 'PWP', 96),
+# #     (92510133019, 'Prem Joshi', 'PWP', 90),
+# #     (92510133009, 'Kaavya Rao', 'PWP', 89),
+# #     (92510133025, 'Desai Vadil', 'PWP', 97)
+# #     ]
+
+# # cursor.executemany('''INSERT INTO student_record (Enrollment, Name, Subject, Mark)
+# #                    VALUES (?,?,?,?)''', student_record)
+
+# # conn.commit()
+
+# cursor.execute('SELECT * FROM student_record')
+# rows = cursor.fetchall()
+# print("All Student Records: ")
+# for row in rows:
+#     print(row)
+    
+
+# #For student Have marks more than 90
+# cursor.execute('SELECT Name, Subject, Mark FROM student_record WHERE Mark > 90')
+# high_Marks = cursor.fetchall()
+
+# print("\n Students with Marks greater than 90: ")
+# for student in high_Marks:
+#     print(student)
+
+# #Update Marks
+# cursor.execute('''UPDATE student_record SET Mark = 98 
+#                   WHERE name = 'Kaavya Rao' AND subject = 'PWP' ''')
+
+# conn.commit()
+
+# #Verify The Update
+
+# cursor.execute('SELECT Name, Mark FROM student_record WHERE name = "Kaavya Rao"')
+# updated_mark = cursor.fetchone()
+# print(f"\nUpdated Mark for {updated_mark[0]}: {updated_mark[1]}")  
+   
+# # Delete a student record (e.g.,DEVENDRASINH DOLATSINH JADEJA )
+# cursor.execute('''DELETE FROM student_record WHERE name = 'Desai Vadil' ''')
+
+# # Commit the changes
+# conn.commit()
+
+# # Verify the deletion
+# cursor.execute('SELECT * FROM student_record WHERE name = "Desai Vadil"')
+# deleted_name = cursor.fetchone()
+
+# if deleted_name is None:
+#     print("\n Desai Vadil has been successfully deleted.")
+
+# # Calculate the average Mark
+# cursor.execute('''SELECT AVG(Mark) FROM student_record''')
+# avg_mark = cursor.fetchone()[0]
+
+# print(f"\nThe average mark of students is: {avg_mark:.2f}")
+
+
+# conn.close()
+
+
+#--------------------------------------------Post-Lab--------------------------------------------
+
+import sqlite3
+
+conn = sqlite3.connect('student_record.db')
+cursor = conn.cursor()
+
+# Step 1: Create Table (Composite Primary Key: Enrollment + Subject)
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS student_record(
+    Enrollment INTEGER,
+    Name TEXT NOT NULL,
+    Subject TEXT NOT NULL,
+    Mark INTEGER NOT NULL,
+    PRIMARY KEY (Enrollment, Subject)
+)
+''')
+
+conn.commit()
+
+# Step 2: Insert records — Each student with multiple subjects
+student_record = [
+    (92510133024, 'Shivang Bhatt', 'PWP', 95),
+    (92510133024, 'Shivang Bhatt', 'SS', 92),
+    (92510133024, 'Shivang Bhatt', 'ICE', 90),
+    (92510133024, 'Shivang Bhatt', 'APTI', 91),
+    (92510133024, 'Shivang Bhatt', 'DSC', 93),
+
+    (92510133023, 'Krishraj Rathod', 'PWP', 96),
+    (92510133023, 'Krishraj Rathod', 'SS', 89),
+    (92510133023, 'Krishraj Rathod', 'ICE', 94),
+    (92510133023, 'Krishraj Rathod', 'APTI', 90),
+    (92510133023, 'Krishraj Rathod', 'DSC', 91),
+
+    (92510133019, 'Prem Joshi', 'PWP', 90),
+    (92510133019, 'Prem Joshi', 'SS', 87),
+    (92510133019, 'Prem Joshi', 'ICE', 91),
+    (92510133019, 'Prem Joshi', 'APTI', 89),
+    (92510133019, 'Prem Joshi', 'DSC', 90),
+
+    (92510133009, 'Kaavya Rao', 'PWP', 89),
+    (92510133009, 'Kaavya Rao', 'SS', 90),
+    (92510133009, 'Kaavya Rao', 'ICE', 88),
+    (92510133009, 'Kaavya Rao', 'APTI', 85),
+    (92510133009, 'Kaavya Rao', 'DSC', 86),
+
+    (92510133025, 'Jenish Desai', 'PWP', 97),
+    (92510133025, 'Jenish Desai', 'SS', 96),
+    (92510133025, 'Jenish Desai', 'ICE', 95),
+    (92510133025, 'Jenish Desai', 'APTI', 94),
+    (92510133025, 'Jenish Desai', 'DSC', 93)
+]
+
+cursor.executemany('''
+INSERT OR REPLACE INTO student_record (Enrollment, Name, Subject, Mark)
+VALUES (?,?,?,?)
+''', student_record)
+
+conn.commit()
+
+# Step 3: Display All Records
+cursor.execute('SELECT * FROM student_record')
+rows = cursor.fetchall()
+print("📋 All Student Records:")
+for row in rows:
+    print(row)
+
+# Step 4: Show Students with Marks > 90
+cursor.execute('SELECT Name, Subject, Mark FROM student_record WHERE Mark > 90')
+high_marks = cursor.fetchall()
+print("\n🏆 Students with Marks Greater Than 90:")
+for student in high_marks:
+    print(student)
+
+# Step 5: Update Marks
+cursor.execute('''
+UPDATE student_record 
+SET Mark = 98 
+WHERE name = 'Kaavya Rao' AND subject = 'PWP'
+''')
+conn.commit()
+
+# Step 6: Confirm Update
+cursor.execute('SELECT Name, Mark FROM student_record WHERE name = "Kaavya Rao" AND subject = "PWP"')
+updated_mark = cursor.fetchone()
+print(f"\n✅ Updated Mark for {updated_mark[0]} in PWP: {updated_mark[1]}")
+
+# Step 7: Delete Jenish Desai's DSC record
+cursor.execute('DELETE FROM student_record WHERE name = "Jenish Desai" AND subject = "DSC"')
+conn.commit()
+
+# Step 8: Confirm Deletion
+cursor.execute('SELECT * FROM student_record WHERE name = "Jenish Desai" AND subject = "DSC"')
+deleted = cursor.fetchone()
+if deleted is None:
+    print("\n🗑️ Jenish Desai's DSC record has been successfully deleted.")
+
+# Step 9: Average Mark
+cursor.execute('SELECT AVG(Mark) FROM student_record')
+avg_mark = cursor.fetchone()[0]
+print(f"\n📊 Average Mark of All Students: {avg_mark:.2f}")
+
+conn.close()
